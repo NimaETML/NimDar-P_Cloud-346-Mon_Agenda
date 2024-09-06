@@ -1,18 +1,4 @@
 const mysql = require('mysql2');
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, "../.env") });
-const connection = mysql.createConnection({
-  host: process.env.DOCKER_MYSQL_HOST,
-  user: process.env.DOCKER_MYSQL_USER,
-  password: process.env.DOCKER_MYSQL_PASSWORD,
-  database: process.env.DOCKER_MYSQL_DATABASE_NAME,
-  port:  process.env.DOCKER_MYSQL_DATABASE_PORT,
-
-});
-
-
-
-connection.connect();
 
 const Teacher = {
   create: (idTeacher, teaLink, callback) => {
