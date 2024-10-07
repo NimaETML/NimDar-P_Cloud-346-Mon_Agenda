@@ -26,7 +26,7 @@ const app = express();
  * Using express-session middleware for persistent user session. Be sure to
  * familiarize yourself with available options. Visit: https://www.npmjs.com/package/express-session
  */
-/*
+
  app.use(session({
     secret: process.env.EXPRESS_SESSION_SECRET,
     resave: false,
@@ -36,7 +36,7 @@ const app = express();
         secure: false, // set this to true on production
     }
 }));
-*/
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
